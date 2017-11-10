@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Standard Meta -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+    <!-- Site Properties -->
+    <title>Datas importantes</title>
+
+    <link rel="stylesheet" type="text/css" href="./semantic/dist/semantic.min.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="./semantic/dist/semantic.min.js"></script>
+    <script>
+        $(document)
+            .ready(function() {
+                // fix main menu to page on passing
+                $('.main.menu').visibility({
+                    type: 'fixed'
+                });
+                $('.overlay').visibility({
+                    type: 'fixed',
+                    offset: 80
+                });
+                // lazy load images
+                $('.image').visibility({
+                    type: 'image',
+                    transition: 'vertical flip in',
+                    duration: 500
+                });
+                // show dropdown on hover
+                $('.main.menu  .ui.dropdown').dropdown({
+                    on: 'hover'
+                });
+            });
+    </script>
+
+    <link rel="stylesheet" type="text/css" href="./custom.css">
+
+</head>
+
+<body>
+
+  <div id="head" class="ui container">
+      <h1 class="ui header centered" style="background-color: rgba(255, 255, 255, 0.66);color: #000;">7a ESCOLA REGIONAL DE ALTO DESEMPENHO DE SÃO PAULO
+ERAD-SP 2016</h1>
+      <h3 class="ui header centered" style="background-color: rgba(255, 255, 255, 0.66);color: #000;">03 a 05 de Agosto de 2016, Universidade Mackenzie, São Paulo(SP)​</h3>
+      <h5 class="ui header centered" style="background-color: rgba(255, 255, 255, 0.66);color: #000;">Campus Higienópolis - Rua da Consolação, 930 - Consolação - (011) 2114-8000​</h5>
+  </div>
+
+
+    <div class="ui bordeless ten item main menu">
+        <div class="ui container">
+          <a href="./index.html" class="item">Home</a>
+          <a href="./programacao.html" class="item">Programação</a>
+          <a href="./chamada-de-trabalhos.html" class="item">Artigos</a>
+          <a href="./submissao-de-minicursos.html" class="item">Tutoriais</a>
+          <a href="./datas-importantes.html" class="item">Palestras</a>
+          <a href="./desafio-de-programacao-paralela.html" class="item">Desafio Prog</a>
+          <a href="./comites.html" class="item">Comitês</a>
+          <a href="./inscricoes.html" class="item">Inscrição</a>
+          <a href="./local.html" class="item">Local</a>
+        </div>
+    </div>
+
+    <div id="bd" class="ui text container">
+        <h1>Palestras</h1>
+        <div class="ui divider"></div>
+        <h2>Palestra I: Como Utilizar Computação de Alto Desempenho na Nuvem</h2>
+        <h4>Alex Coqueiro<br />Arquiteto de Soluções para o Setor Público para América Latina, Caribe e Canada - AMAZON</h4>
+        <h5>Auditório João Calvino - 03/08 (Quarta-Feira) - 16:30 às 17:30</h5>
+        <img class="ui small left floated image" data-src="./img/Alex Coqueiro.png">
+        <p>
+            <strong>Resumo: </strong> A computação de alto desempenho (HPC) vem tendo papel fundamental na resolução de problemas complexos de ciência, engenharia e negócios usando uma infra-estrutura que demanda capacidade de computação muito alta. Nesta
+            palestra será compartilhado como diversas entidades de pesquisa em âmbito global tem adotado soluções de nuvem permitindo aumentar a velocidade da pesquisa executando computação de alto desempenho na nuvem e reduzir custos fornecendo servidores
+            de computação em cluster ou GPU de cluster sob demanda sem grandes investimentos de capital. Serão apresentados técnicas de rede totalmente bissecionada e de alta largura de banda para cargas de trabalho altamente acopladas e de I/O intensiva,
+            o que permite aumentar a escala até milhares de núcleos para aplicações orientadas à grande necessidade de performance.
+        </p>
+
+        <div class="ui divider"></div>
+        <img class="ui small floated right image" data-src="./img/Eli_Junior.png.jpeg">
+        <h2>Palestra II: HPC na Pesquisa de Finanças</h2>
+        <h4>Eli Hadad Junior<br />Observatório de Finanças<br />Universidade Presbiteriana Mackenzie</h4>
+        <h5>Auditório João Calvino - 03/08 (Quarta-Feira) - 17:30 às 18:30</h5>
+
+
+        <div class="ui divider"></div>
+        <h2>Palestra III: Sistemas Distribuídos para o Controle de Telescópios. SST e LLAMA: Comparações e Experiências</h2>
+        <h4>Guillermo Giménez de Castro<br />Centro de Rádio Astronomia e Astrofísica Mackenzie (CRAAM)<br />Universidade Presbiteriana Mackenzie</h4>
+        <h5>Auditório João Calvino - 04/08 (Quinta-Feira) - 16:30 às 17:30</h5>
+        <img class="ui small floated left image" data-src="./img/Guillermo Giménez de Castro.jpeg">
+        <p>
+            <strong>Resumo: </strong>Os telescópios modernos, cada vez mais poderosos em sua capacidade observacional, são também sistemas cada vez mais complexos. A complexidade se dá pelo grande número de sistemas que precisam ser controlados simultaneamente
+            e em tempo real. Hoje em dia, o controle completo dos telescópios se realiza por meio de computadores, e, mesmo que os computadores aumentem a sua capacidade de processamento, faz-se necessário adotar uma política de divisão coordenada das
+            tarefas, ou seja, processamento distribuído. Analisamos aqui dois casos concretos cujos design, construção e operação estamos diretamente envolvidos: o Telescópio Solar para Ondas Submilimétricas (SST por sua sigla em inglês) e o Large Latin
+            American Millimeter Array (LLAMA). O SST foi desenvolvido nos anos 90 e opera ininterruptamente desde o ano 2001. LLAMA está atualmente em construção e se espera comece a observar em 2018. Ambos os instrumentos trabalham numa faixa semelhante
+            de frequências do espectro eletromagnético, e têm modos de operação parecidos. Em termos de software de controle, a filosofia é parecida, mas as tecnologias adotadas diferem substantivamente. O sistema de controle do SST é baseado no sistema
+            oparacional "hard real time" QNX, fazendo uso de seu "low latency micro-kernel", "message queuing" e memórias compartilhadas para coordenar a atividade de dezenas de diferentes processos escritos em linguagem C, que vão desde o cálculo das
+            efemérides astronômicas até a leitura e armazenamento de dados digitais. No caso de LLAMA, ele se baseia em uma distribuição Red Hat Linux, junto com o módulo de kernel Real Time Aplication Interface (RTAI), e usa o modelo de contâiner / componente,
+            adotando CORBA como "middleware", para a coordenação dos diferentes processos desenvolvidos nas linguagens C++, Java e Python.
+        </p>
+
+
+        <div class="ui divider"></div>
+        <h2>Palestra IV: Rede SINAPAD e o Supercomputador Petaflópico SDumont</h2>
+        <h4>Antonio Tadeu Azevedo Gomes (LNCC)</h4>
+        <h5>Auditório João Calvino - 04/08 (Quinta-Feira) - 17:30 às 18:30</h5>
+        <img class="ui floated right image" data-src="./img/shapeimage_2.png">
+        <p>
+            <strong>Resumo: </strong>Nesta palestra, apresentamos as principais iniciativas de e-Ciência sendo realizadas dentro da rede SINAPAD, um programa do Ministério da Ciência, Tecnologia e Inovação que visa oferecer serviços de HPC para a comunidade
+            científica brasileira. Vamos começar a palestra apresentando os recursos disponíveis no SINAPAD, seu perfil de uso e limitações atuais. Continuamos com a apresentação de alguns serviços de e-Ciência que estão sendo oferecidos dentro do SINAPAD
+            para lidar com algumas dessas limitações e alavancar a qualidade da experiência dos usuários. Apresentamos também o Supercomputador SDumont do LNCC, maior recurso de HPC inteiramente destinado a “Open Science" na América Latina, incluindo
+            sua arquitetura e os requisitos esperados pelas aplicações candidatas a executar no mesmo. Concluímos a palestra apresentando as ações de médio e longo prazo que estão sendo planejadas no SINAPAD visando expandir consideravelmente sua capacidade
+            de e-Ciência, não só para HPC, mas também para Big Data.
+        </p>
+
+
+        <div class="ui divider"></div>
+        <h2>Palestra V: Energy-Efficient Parallel Software</h2>
+        <h4>Samuel Xavier de Souza (UFRN)</h4>
+        <h5>Auditório da Escola Americana - 05/08 (Sexta-Feira) - 11:30 às 12:30</h5>
+        <img class="ui small floated left image" data-src="img\Samuel Xavier de Souza.jpg">
+        <p>
+            <strong>Resumo: </strong>The growth rate of power dissipation has played an important role in the way computational performance has been sustaining growth. The thermal limitations imposed by the power wall made parallelism an essential part
+            of any scalable computation. Although power remains a concern, energy consumption is generally second to performance as application design goal due to the absence of general programming tools aiming to improve energy efficiency. Researchers
+            attempt to fill this gap by enabling programmers to target energy consumption as a primary design goal by delivering static energy consumption estimation from the compiler's point of view. However, for some more complex computations, runtime
+            optimization of the energy efficiency can be crucial. We present ongoing research that targets such runtime approach aiming to allow the programmer to find optimal runtime configurations based on the profiling of parallel performance metrics
+            and on the frequency-power relationship. The symbiotic relationship between static and runtime approaches should boost capabilities and allow programmers to write applications that are up to one order of magnitude more energy efficient. This
+            would not only have a large impact on battery life, in embedded systems, and energy bills, in HPC systems, but also would make energy harvesting more usable, becoming one the key mechanisms to allow zero-energy Internet of Things.
+
+        </p>
+
+        <div class="ui divider"></div>
+        <img class="ui small floated right image" data-src="./img/alfredo_grenoble.jpg">
+        <h2>Palestra VI: Computação Paralela e Eu</h2>
+        <h4>Alfredo Goldman (IME-USP)</h4>
+        <h5>Auditório João Calvino - 05/08 (Sexta-Feira) - 16:30 às 17:30</h5>
+
+        <p>
+            <strong>Resumo: </strong>Quando iniciei minha pesquisa em 1992 havia um grande interesse em redes de interconexão e computação paralela só era possível em máquinas dedicadas. Recentemente, tivemos algumas mudanças de paradigma, onde por vezes
+            a computação de alto desempenho está completamente relacionada a sistemas distribuídos. Traga as suas dúvidas e comentários para discussão!
+        </p>
+
+    </div>
+
+    <div class="ui inverted vertical footer segment">
+        <div class="centered ui tiny header">Grupo de Computação Paralela e Sistemas Distribuídos</div>
+        <div class="centered ui tiny header">Faculdade de Computação e Informática - Universidade Mackenzie</div>
+    </div>
+</body>
+
+</html>

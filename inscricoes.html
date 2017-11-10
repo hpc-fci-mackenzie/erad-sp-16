@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Standard Meta -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+    <!-- Site Properties -->
+    <title>Inscrições</title>
+
+    <link rel="stylesheet" type="text/css" href="./semantic/dist/semantic.min.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="./semantic/dist/semantic.min.js"></script>
+    <script>
+        $(document)
+            .ready(function() {
+                // fix main menu to page on passing
+                $('.main.menu').visibility({
+                    type: 'fixed'
+                });
+                $('.overlay').visibility({
+                    type: 'fixed',
+                    offset: 80
+                });
+                // lazy load images
+                $('.image').visibility({
+                    type: 'image',
+                    transition: 'vertical flip in',
+                    duration: 500
+                });
+                // show dropdown on hover
+                $('.main.menu  .ui.dropdown').dropdown({
+                    on: 'hover'
+                });
+            });
+    </script>
+
+    <link rel="stylesheet" type="text/css" href="./custom.css">
+
+</head>
+
+<body>
+
+  <div id="head" class="ui container">
+      <h1 class="ui header centered" style="background-color: rgba(255, 255, 255, 0.66);color: #000;">7a ESCOLA REGIONAL DE ALTO DESEMPENHO DE SÃO PAULO
+ERAD-SP 2016</h1>
+      <h3 class="ui header centered" style="background-color: rgba(255, 255, 255, 0.66);color: #000;">03 a 05 de Agosto de 2016, Universidade Mackenzie, São Paulo(SP)​</h3>
+      <h5 class="ui header centered" style="background-color: rgba(255, 255, 255, 0.66);color: #000;">Campus Higienópolis - Rua da Consolação, 930 - Consolação - (011) 2114-8000​</h5>
+  </div>
+
+
+    <div class="ui bordeless ten item main menu">
+        <div class="ui container">
+          <a href="./index.html" class="item">Home</a>
+          <a href="./programacao.html" class="item">Programação</a>
+          <a href="./chamada-de-trabalhos.html" class="item">Artigos</a>
+          <a href="./submissao-de-minicursos.html" class="item">Tutoriais</a>
+          <a href="./datas-importantes.html" class="item">Palestras</a>
+          <a href="./desafio-de-programacao-paralela.html" class="item">Desafio Prog</a>
+          <a href="./comites.html" class="item">Comitês</a>
+          <a href="./inscricoes.html" class="item">Inscrição</a>
+          <a href="./local.html" class="item">Local</a>
+        </div>
+    </div>
+
+    <div id="bd" class="ui text container">
+        <h1>Inscrições</h1>
+        <p>
+            As inscrições deverão ser realizadas exclusivamente no Sistema de Inscrições (ECOS) da SBC. Clique aqui para realizar a inscrição. Depois da inscrição, se já precisar de informações de hospedagem, não deixe de seguir este <a href="https://centraldesistemas.sbc.org.br/ecos/eradsp2016">link</a>.
+        </p>
+
+        <p>
+            <strong style="color:red;">No momento, somente estão sendo aceitos pagamentos em cartão de crédito, faturamento e nota de empenho. Segundo informações recebidas da SBC, a partir do dia 12/07, serão aceitos pagamentos por boletos e débitos.</strong>
+        </p>
+
+        <p>
+            A tabela de valores das inscrições encontra-se abaixo:
+        </p>
+
+        <table class="ui small celled table">
+            <thead>
+                <tr>
+                    <th>Inscrição (valores em reais)</th>
+                    <th>
+                        Até 20 de julho 2016 (inclusive)
+                    </th>
+                    <th>Após 20 de julho 2016</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Aluno de graduação sócio da SBC</td>
+                    <td>R$ 30,00</td>
+                    <td>R$ 40,00</td>
+                </tr>
+                <tr>
+                    <td>Aluno de graduação autor (Fórum de IC)</td>
+                    <td>R$ 30,00</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>Aluno de graduação não-sócio da SBC</td>
+                    <td>R$ 40,00</td>
+                    <td>R$ 50,00</td>
+                </tr>
+                <tr>
+                    <td>Aluno de pós-graduação sócio da SBC</td>
+                    <td>R$ 50,00</td>
+                    <td>R$ 70,00</td>
+                </tr>
+                <tr>
+                    <td>Aluno de pós-graduação autor (Fórum de PG)</td>
+                    <td>R$ 50,00</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>Aluno de pós-graduação não-sócio da SBC</td>
+                    <td>R$ 70,00</td>
+                    <td>R$ 90,00</td>
+                </tr>
+                <tr>
+                    <td>Professor sócio da SBC</td>
+                    <td>R$ 50,00</td>
+                    <td>R$ 70,00</td>
+                </tr>
+                <tr>
+                    <td>Professor não-sócio da SBC</td>
+                    <td>R$ 70,00</td>
+                    <td>R$ 90,00</td>
+                </tr>
+                <tr>
+                    <td>Profissionais sócios da SBC</td>
+                    <td>R$ 100,00</td>
+                    <td>R$ 150,00</td>
+                </tr>
+                <tr>
+                    <td>Profissionais não-sócios da SBC</td>
+                    <td>R$ 150,00</td>
+                    <td>R$ 200,00</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p>
+            Alguns detalhes importantes:
+        </p>
+
+        <div class="ui bulleted list">
+            <div class="item">Os autores do Fórum de IC e do Fórum de PG deverão realizar sua inscrição até o dia 20/07/2016 para confirmação da publicação de seus trabalhos nos anais do evento.
+</div>
+            <div class="item">A inscrição no evento, em qualquer categoria, garante a participação em todas as atividades do evento (fóruns, palestras e os minicursos). </div>
+            <div class="item">A data limite para solicitação de reembolso da inscrição é 25/07/2016. O valor do reembolso será de 80%, sendo que os 20% restantes devem cobrir os custos administrativos da inscrição.</div>
+        </div>
+
+        <p>
+          Se precisar de informações de hospedagem, não deixe de consultar este <a href="./local.html">link</a> com as nossas sugestões.
+        </p>
+
+
+    </div>
+
+    <div class="ui inverted vertical footer segment">
+        <div class="centered ui tiny header">Grupo de Computação Paralela e Sistemas Distribuídos</div>
+        <div class="centered ui tiny header">Faculdade de Computação e Informática - Universidade Mackenzie</div>
+    </div>
+</body>
+
+</html>

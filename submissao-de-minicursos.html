@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Standard Meta -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+    <!-- Site Properties -->
+    <title>Chamada de Trabalhos</title>
+
+    <link rel="stylesheet" type="text/css" href="./semantic/dist/semantic.min.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="./semantic/dist/semantic.min.js"></script>
+    <script>
+        $(document)
+            .ready(function() {
+                // fix main menu to page on passing
+                $('.main.menu').visibility({
+                    type: 'fixed'
+                });
+                $('.overlay').visibility({
+                    type: 'fixed',
+                    offset: 80
+                });
+                // lazy load images
+                $('.image').visibility({
+                    type: 'image',
+                    transition: 'vertical flip in',
+                    duration: 500
+                });
+                // show dropdown on hover
+                $('.main.menu  .ui.dropdown').dropdown({
+                    on: 'hover'
+                });
+            });
+    </script>
+
+    <link rel="stylesheet" type="text/css" href="./custom.css">
+
+</head>
+
+<body>
+
+  <div id="head" class="ui container">
+      <h1 class="ui header centered" style="background-color: rgba(255, 255, 255, 0.66);color: #000;">7a ESCOLA REGIONAL DE ALTO DESEMPENHO DE SÃO PAULO
+ERAD-SP 2016</h1>
+      <h3 class="ui header centered" style="background-color: rgba(255, 255, 255, 0.66);color: #000;">03 a 05 de Agosto de 2016, Universidade Mackenzie, São Paulo(SP)​</h3>
+      <h5 class="ui header centered" style="background-color: rgba(255, 255, 255, 0.66);color: #000;">Campus Higienópolis - Rua da Consolação, 930 - Consolação - (011) 2114-8000​</h5>
+  </div>
+
+
+    <div class="ui bordeless ten item main menu">
+        <div class="ui container">
+          <a href="./index.html" class="item">Home</a>
+          <a href="./programacao.html" class="item">Programação</a>
+          <a href="./chamada-de-trabalhos.html" class="item">Artigos</a>
+          <a href="./submissao-de-minicursos.html" class="item">Tutoriais</a>
+          <a href="./datas-importantes.html" class="item">Palestras</a>
+          <a href="./desafio-de-programacao-paralela.html" class="item">Desafio Prog</a>
+          <a href="./comites.html" class="item">Comitês</a>
+          <a href="./inscricoes.html" class="item">Inscrição</a>
+          <a href="./local.html" class="item">Local</a>
+        </div>
+    </div>
+
+    <div id="bd" class="ui text container">
+        <h1>Tutoriais e Minicursos</h1>
+        <div class="ui divider"></div>
+
+        <!-- PLACEHOLDER -->
+
+        <div class="ui segment">
+            <h3 class="ui floated header">Tutorial I: Construindo aceleradores com FPGAs para computação de alto desempenho</h3>
+            <h5 class="ui right floated header">Ricardo Menotti (DC-UFSCar)</h5>
+            <div class="ui clearing divider"></div>
+            <p>Auditório Escola Americana - 03/08 (Quarta-Feira) - 11:00 - 12:30</p>
+            <p><strong>Resumo: </strong> A computação reconfigurável tem se tornado cada vez mais importante em sistemas computacionais embarcados e de alto desempenho. A chamada computação heterogênea consiste em usar aceleradores de diferentes arquiteturas
+                para melhorar o desempenho e reduzir o consumo de energia dos computadores. Os FPGAs, usados recentemente como aceleradores, permitem níveis de desempenho próximos aos obtidos com circuitos integrados de aplicação específica (ASIC), enquanto
+                ainda mantém flexibilidade de projeto e implementação. No entanto, para programar eficientemente estes dispositivos, é necessária experiência em desenvolvimento e domínio de linguagens de descrição de hardware (HDL), tais como VHDL e Verilog.
+                Neste tutorial serão abordados os principais aspectos da computação reconfigurável, abordagens para reduzir a complexidade de projeto, bem como seu uso recente na computação de alto desempenho. </p>
+        </div>
+
+        <div class="ui segment">
+            <h3 class="ui floated header">Tutorial II: O primeiro passo para se programar dez milhões de cores</h3>
+            <h5 class="ui right floated header">Denise Stringhini, Alvaro Fazenda (SJC-UNIFESP)</h5>
+            <div class="ui clearing divider"></div>
+            <p>Auditório Escola Americana - 03/08 (Quarta-Feira) - 14:00 - 15:30</p>
+            <p><strong>Resumo: </strong>Recentemente, o ranking das máquinas mais poderosas do mundo, publicada no site Top500.org, apontou a máquina chinesa Sunway Taihu como número um entre as 500 mais rápidas, a qual tem em sua arquitetura mais de dez
+                milhões de cores. Este tutorial apresenta princípios básicos de programação nestas supermáquinas através da introdução da biblioteca de programação paralela MPI (Message Passing Interface). Serão apresentados conceitos de arquiteturas
+                paralelas, assim como as principais rotinas de comunicação da biblioteca MPI em linguagem C, tipos de aplicações e aspectos relacionados ao desempenho de tais programas.</p>
+        </div>
+
+        <h1>Minicursos</h1>
+        <div class="ui divider"></div>
+
+        <div class="ui segment">
+            <h3 class="ui floated header">Minicurso I : Um Estudo sobre a Expansão das Diretivas de Compilação para Interceptação de Código OpenMP</h3>
+            <h5 class="ui right floated header">Rogério Gonçalves (UTFPR) e Alfredo Goldman (IME-USP)</h5>
+            <div class="ui clearing divider"></div>
+            <p>Auditório João Calvino - 03/08 (Quarta-Feira) - 11:00 - 12:30 (Primeira Parte) e 14:00-15:30 (Segunda Parte)</p>
+            <p><strong>Resumo: </strong>O objetivo é apresentar uma introdução ao OpenMP mostrando as principais diretivas de compilação para a cobertura de regiões paralelas, laços, seções e tasks, bem como a estrutura do código gerado pela expansão dessas
+                diretivas. Esses conceitos podem ser aplicados no desenvolvimento de bibliotecas para interceptar chamadas que as aplicações fazem ao runtime do OpenMP, o que possibilita a execução de código pré ou pós chamada para a criação de traces,
+                para atividades de logging, para o monitoramento e avaliação de desempenho ou para offloading de código para dispositivos aceleradores.</p>
+        </div>
+
+        <div class="ui segment">
+            <h3 class="ui floated header">Minicurso II : Introdução à Programação de GPUs com a plataforma CUDA</h3>
+            <h5 class="ui right floated header">Pedro Bruel (IME-USP) e Alfredo Goldman (IME-USP)</h5>
+            <div class="ui clearing divider"></div>
+            <p>Auditório João Calvino - 04/08 (Quinta-Feira) - 08:30 - 10:00 (Primeira Parte) e 14:00-15:30 (Segunda Parte)</p>
+            <p><strong>Resumo: </strong>O objetivo deste minicurso é disseminar o conhecimento e o uso de GPUs na pesquisa em Ciência da Computação. Apresentaremos a plataforma CUDA como ferramenta para facilitar a programação e a otimização de projetos
+                para GPUs. Introduziremos algumas características do hardware de GPUs, o modelo de programação da linguagem CUDA C, e ferramentas para profiling e debugging de aplicações CUDA. O objetivo é que os participantes saiam do minicurso com o
+                interesse e a capacidade de se aprofundar nas ferramentas da plataforma CUDA e de utilizar GPUs em seus projetos pesquisa.</p>
+        </div>
+
+        <div class="ui segment">
+            <h3 class="ui floated header">Minicurso III : Task Parallelism Runtimes and Architectures</h3>
+            <h5 class="ui right floated header">Guido Araujo (IC-UNICAMP)</h5>
+            <div class="ui clearing divider"></div>
+            <p>Auditório MackMobile - 04/08 (Quinta-Feira) - 08:30 - 10:00 (Primeira Parte) e 14:00-15:30 (Segunda Parte)</p>
+            <p><strong>Resumo: </strong>In recent years, Task-based Programming/Execution model has proven itself a scalable and quite flexible approach to extract regular and irregular parallelism from applications. In this model the programmer uses a task
+                annotation directive to add annotations to code regions in the program which will later be used by a runtime system to manage the parallel execution of such regions. Programming models for task parallelism like OpenSs and OpenMP 4.X have
+                been proposed which easy the task of programming tasks. These models have been supported by runtimes like Intel IOMP, GCC GOMP, and MTSP. In this course we will describe how to use task parallelism to speed-up program execution, and detail
+                the design of runtimes. We will also discuss some optimization techniques like dependency resolution acceleration, to reduce runtime overhead, and task stealing to improve workload balancing. The course will have a short practical session
+                in which the public will be able to play with task programming and runtime design (bring your laptop).</p>
+        </div>
+
+        <div class="ui segment">
+            <h3 class="ui floated header">Minicurso IV : Introdução à Vetorização em Arquiteturas Paralelas Híbridas</h3>
+            <h5 class="ui right floated header">Silvio Stanzani, Raphael Cube, Rogério Iope (NCC-UNESP)</h5>
+            <div class="ui clearing divider"></div>
+            <p>Auditório Escola Americana - 05/08 (Sexta-Feira) - 08:30 - 10:00 (Primeira Parte) e 14:00-15:30 (Segunda Parte)</p>
+            <p><strong>Resumo: </strong>Utilização de técnicas de vetorização de código são essenciais para se obter alto desempenho nas arquiteturas computacionais atuais, que vem oferecendo cada vez mais unidades de processamento vetoriais e com maior
+                capacidade. Nesse sentido, é proposto um minicurso básico de três horas com o objetivo de ensinar os conceitos relacionados com vetorizaçäo e técnicas de acesso eficiente a memória, bem como, ferramentas para explorar tais técnicas, usando
+                os recursos oferecidos pelas arquiteturas Multicore e Manycore (Intel Xeon e Intel Xeon Phi).</p>
+        </div>
+
+        <div class="ui segment">
+            <h3 class="ui floated header">Minicurso V : Introdução ao Spark para Data Science</h3>
+            <h5 class="ui right floated header">Thiago Baldim (Reddrummer Tecnologia)</h5>
+            <div class="ui clearing divider"></div>
+            <p>Auditório João Calvino - 05/08 (Sexta-Feira) - 08:30 - 10:00 (Primeira Parte) e 14:00-15:30 (Segunda Parte)</p>
+            <p><strong>Resumo: </strong>Apache Spark é uma engine para processamento de dados em larga escala. Utilizando infraestruturas baseadas em Hadoop para dados distribuidos, garantindo uma velocidade de processamento até cem vezes mais rápido que
+                o processamento por hadoop. Permitindo execução de map reduces em memória RAM, tendo ganho de processamento dez vezes mais rápido que em disco.</p>
+        </div>
+
+
+
+
+
+    </div>
+
+    <div class="ui inverted vertical footer segment">
+        <div class="centered ui tiny header">Grupo de Computação Paralela e Sistemas Distribuídos</div>
+        <div class="centered ui tiny header">Faculdade de Computação e Informática - Universidade Mackenzie</div>
+    </div>
+</body>
+
+</html>

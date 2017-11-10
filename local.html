@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Standard Meta -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+    <!-- Site Properties -->
+    <title>Local</title>
+
+    <link rel="stylesheet" type="text/css" href="./semantic/dist/semantic.min.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="./semantic/dist/semantic.min.js"></script>
+    <script>
+        $(document)
+            .ready(function() {
+                // fix main menu to page on passing
+                $('.main.menu').visibility({
+                    type: 'fixed'
+                });
+                $('.overlay').visibility({
+                    type: 'fixed',
+                    offset: 80
+                });
+                // lazy load images
+                $('.image').visibility({
+                    type: 'image',
+                    transition: 'vertical flip in',
+                    duration: 500
+                });
+                // show dropdown on hover
+                $('.main.menu  .ui.dropdown').dropdown({
+                    on: 'hover'
+                });
+            });
+    </script>
+
+    <link rel="stylesheet" type="text/css" href="./custom.css">
+
+</head>
+
+<body>
+
+  <div id="head" class="ui container">
+      <h1 class="ui header centered" style="background-color: rgba(255, 255, 255, 0.66);color: #000;">7a ESCOLA REGIONAL DE ALTO DESEMPENHO DE SÃO PAULO
+ERAD-SP 2016</h1>
+      <h3 class="ui header centered" style="background-color: rgba(255, 255, 255, 0.66);color: #000;">03 a 05 de Agosto de 2016, Universidade Mackenzie, São Paulo(SP)​</h3>
+      <h5 class="ui header centered" style="background-color: rgba(255, 255, 255, 0.66);color: #000;">Campus Higienópolis - Rua da Consolação, 930 - Consolação - (011) 2114-8000​</h5>
+  </div>
+
+
+    <div class="ui bordeless ten item main menu">
+        <div class="ui container">
+          <a href="./index.html" class="item">Home</a>
+          <a href="./programacao.html" class="item">Programação</a>
+          <a href="./chamada-de-trabalhos.html" class="item">Artigos</a>
+          <a href="./submissao-de-minicursos.html" class="item">Tutoriais</a>
+          <a href="./datas-importantes.html" class="item">Palestras</a>
+          <a href="./desafio-de-programacao-paralela.html" class="item">Desafio Prog</a>
+          <a href="./comites.html" class="item">Comitês</a>
+          <a href="./inscricoes.html" class="item">Inscrição</a>
+          <a href="./local.html" class="item">Local</a>
+        </div>
+    </div>
+
+    <div id="bd" class="ui text container">
+        <h1>Informações Locais, Transporte e Hospedagem</h1>
+        <img class="ui large left floated image" src="http://placehold.it/1200x800?text=imagem+da+programação">
+        <h2>Cidade de São Paulo</h2>
+        <p>
+            São Paulo é um município brasileiro, capital do Estado de São Paulo e principal centro financeiro, corporativo e mercantil da América do Sul. É a cidade mais populosa do Brasil e de todo o hemisfério sul.
+        </p>
+        <p>
+            Em 2015, São Paulo integrou a lista das "melhores cidades do mundo para se estudar em 2016" e foi considerada a melhor cidade para se empreender no país. O lema da cidade, presente em seu brasão oficial, é "Non ducor, duco", frase latina que significa
+            "Não sou conduzido, conduzo".
+        </p>
+        <img class="ui medium right floated image" src="http://placehold.it/1200x800?text=imagem+da+programação">
+        <p>
+            Durante a ERAD-SP, você pode aproveitar as atrações turísticas e culturais da cidade. Confira as oportunidades no link abaixo:
+        </p>
+        <p>
+            <a href="http://www.visitesaopaulo.com/">O que fazer em São Paulo</a>
+        </p>
+        <h2>Universidade Presbiteriana Mackenzie</h2>
+        <p>
+            A <a href="http://www.mackenzie.br">Universidade Presbiteriana Mackenzie</a> é uma instituição de ensino superior particular no Brasil e possui campi de graduação e pós-graduação em São Paulo (Campus Higienópolis, sede da ERAD-SP 2016), Campinas,
+            Alphaville, Brasília, Recife e Rio de Janeiro. É mantida pelo Instituto Presbiteriano Mackenzie, associação civil de direito privado, sem fins lucrativos, de finalidade educacional e filantrópica.
+        </p>
+        <p>
+            A universidade iniciou suas atividades em 1870, com a chegada do casal de missionários presbiterianos George e Mary Ann Annesley Chamberlain, como nome de Escola Americana. Em 1896, teve o primeiro ano letivo da Escola de Engenharia Mackenzie, já localizada
+            no bairro de Higienópolis.
+        </p>
+        <p>
+            Atualmente, o campus Higienópolis possui mais de 50 prédios, onde circulam cerca de 35 mil alunos em mais de 40 cursos. Para conhecer um pouco mais de nossa história, consulte o link abaixo.
+        </p>
+        <p>
+            <a href="https://pt.wikipedia.org/wiki/Universidade_Presbiteriana_Mackenzie">História da Universidade Mackenzie</a>
+        </p>
+        <h2>Hotéis, Apartamentos e Hostels Próximos a Universidade Mackenzie</h2>
+        <p>
+            Para se hospedar durante o evento, recomendamos as opções de hotéis abaixo, cuja distância permite ir à pé até o Campus Higienópolis. Em função de ainda estarmos em período de Olimpíadas, recomendamos que as reservas sejam feitas com antecedência.
+        </p>
+        <table class="ui very basic collapsing celled table">
+            <thead>
+                <tr>
+                    <th>Hotel</th>
+                    <th>Site</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                      <p>
+                        <strong>TRYP São Paulo Higienópolis</strong></br>
+                        Rua Maranhão, 371</br>
+                        (011) 3665-8200
+                      </p>
+                    </td>
+                    <td><a href="http://www.melia.com/pt/hoteis/brasil/sao-paulo/tryp-sao-paulo-higienopolis-hotel/index.html">http://www.melia.com/pt/hoteis/brasil/sao-paulo/tryp-sao-paulo-higienopolis-hotel/index.html</a></td>
+                </tr>
+                <tr>
+                    <td>
+                      <p>
+                        <strong>Hotel Braston Augusta</strong></br>
+                        Rua Augusta, 467</br>
+                        (011) 3123-6000
+                      </p>
+                    </td>
+                    <td><a href="http://www.braston.com/augusta/">http://www.braston.com/augusta/</a></td>
+                </tr>
+                <tr>
+                    <td>
+                      <p>
+                        <strong>Hotel Pan Americano</strong></br>
+                        Rua Augusta, 778</br>
+                        (011) 3231-0333
+                      </p>
+                    </td>
+                    <td><a href="http://www.hoteis.com/ho399504/hotel-pan-americano-sao-paulo-brasil/">http://www.hoteis.com/ho399504/hotel-pan-americano-sao-paulo-brasil/</a></td>
+                </tr>
+                <tr>
+                    <td>
+                      <p>
+                        <strong>Hotel Pergamon</strong></br>
+                        Rua Frei Caneca, 80</br>
+                        (011) 3123-2021
+                      </p>
+                    </td>
+                    <td><a href="http://www.bhghoteis.com.br/hotel-pergamon-sao-paulo-frei-caneca/">http://www.bhghoteis.com.br/hotel-pergamon-sao-paulo-frei-caneca/</a></td>
+                </tr>
+                <tr>
+                    <td>
+                      <p>
+                        <strong>Ibis Budget São Paulo Paulista</strong></br>
+                        Rua da Consolação, 2303</br>
+                        (011) 3123-7755
+                      </p>
+                    </td>
+                    <td><a href="http://www.ibis.com/pt-br/hotel-5323-ibis-budget-sao-paulo-paulista/index.shtml">http://www.ibis.com/pt-br/hotel-5323-ibis-budget-sao-paulo-paulista/index.shtml</a></td>
+                </tr>
+                <tr>
+                    <td>
+                      <p>
+                        <strong>Hotel Ville</strong></br>
+                        Rua Dona Veridiana, 643</br>
+                        (011) 3257-5288
+                      </p>
+                    </td>
+                    <td><a href="http://www.hotelville.com.br/NOVOSITE/index.php">http://www.hotelville.com.br/NOVOSITE/index.php</a></td>
+                </tr>
+            </tbody>
+        </table>
+        <p>
+          Se você preferir fazer sua própria escolha, sugerimos seguir este link de busca: <a href="http://www.hoteis.com/de1712571/hoteis-proximos-a-universidade-presbiteriana-mackenzie-sao-paulo-brasil/">http://www.hoteis.com/de1712571/hoteis-proximos-a-universidade-presbiteriana-mackenzie-sao-paulo-brasil/</a>
+        </p>
+        <p>
+          A cidade de São Paulo também conta com vários apartamentos e hostels cadastrados no serviço Airbnb. Se quiser verificar as possibilidades deste serviço, siga o link: <a href="https://www.airbnb.com/">https://www.airbnb.com/</a>
+        </p>
+        <h2>Mapa de Orientação dentro do Campus Higienópolis</h2>
+        <p>
+          O campus Higienópolis está localizado na <strong>Rua da Consolação, 930</strong>. Há um número geral da universidade <strong>(011) 2114-8000</strong> que pode lhe prestar qualquer informação necessária do campus. Você também pode consultar o mapa do local neste <a href="http://up.mackenzie.br/a-universidade/endereco-informacoes/">link</a>.
+        </p>
+        <p>
+          Para se localizar dentro do Campus Higienópolis, utiliza o mapa abaixo. Há quatro portarias dentro do campus e, em qualquer uma delas, podem ser obtidas informações sobre a localização dos nossos prédios.
+        </p>
+        <img class="ui large centered image" src="http://placehold.it/1200x800?text=imagem+da+programação">
+        <h2>Restaurantes</h2>
+        <p>
+          Dentro da Universidade Mackenzie, há uma grande praça de alimentação no Prédio 19, com opções como self-service, pratos prontos, lanches e café. Dentro do campus, também existe a opção de almoçar/jantar no Restaurante do Seu Zé.
+        </p>
+        <p>
+          Há, também, diversas opções de restaurantes ao longo do Rua Maria Antonia. Sugerimos a Praça de Alimentação Soho, o The Joy e o Vila Imperial.
+        </p>
+    </div>
+
+    <div class="ui inverted vertical footer segment">
+        <div class="centered ui tiny header">Grupo de Computação Paralela e Sistemas Distribuídos</div>
+        <div class="centered ui tiny header">Faculdade de Computação e Informática - Universidade Mackenzie</div>
+    </div>
+</body>
+
+</html>
